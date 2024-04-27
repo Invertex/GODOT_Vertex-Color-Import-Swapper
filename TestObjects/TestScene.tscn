@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://v7ys6vie6xch"]
+
+[ext_resource type="PackedScene" uid="uid://do3eq488feo5d" path="res://TestObjects/CubeWithExtrasAttrib-gltf_color_0.gltf" id="1_6xgbb"]
+[ext_resource type="PackedScene" uid="uid://cpy7qshdojb1v" path="res://TestObjects/CubeWithAttr-_COLOR_0.glb" id="1_cv8gp"]
+[ext_resource type="PackedScene" uid="uid://bcwfgwfjr7cix" path="res://TestObjects/CubeWithAttr-_OUTLINECOLOR.gltf" id="2_1jqk6"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="CubeWithAttr-_COLOR_0" parent="." instance=ExtResource("1_cv8gp")]
+
+[node name="CubeWithAttr-_OUTLINECOLOR" parent="." instance=ExtResource("2_1jqk6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2.91592)
+
+[node name="CubeWithExtrasAttrib-gltf_color_0" parent="." instance=ExtResource("1_6xgbb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5.72926)
