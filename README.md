@@ -13,7 +13,7 @@ Allows importing to automatically move vertex color data from a different file a
   Asset should be found on the Godot AssetLib soon, in which case, please use it from there instead!
 
 
-# Details
+# How It Works
 
 Adds options to also define yourself where you want the primary vertex color data to be sourced from in the file:
 
@@ -32,11 +32,17 @@ If `gltf_color_0` is not found, then it will default to looking for an Attribute
 
 And if it finds neither of those, it will then see if there's already a secondary Vertex color channel in the asset, and will move it to the the First Vertex Channel for use in your shaders.
 
+# Ensuring your Custom Attribute is exported
+The GLTF exporter will export any extra Attributes you have on meshes, **as long as they start with an `_` underscore**. Like  `_MyVertexColor`
+
+To enable that feature, make sure this `Attributes` Export Option is checked:
+
+![](https://github.com/Invertex/GODOT_Vertex-Color-Import-Swapper/raw/master/GitAssets/blender_export_settings.png)
 
 # Exporting "extras" from Blender
 
-To make sure "extras" are exported for your objects in Blender, you need to make sure this Export setting is checked:
+To make sure "extras" are exported for your objects in Blender, you need to make sure `Custom Properties` Export setting is checked:
 
 ![](https://github.com/Invertex/GODOT_Vertex-Color-Import-Swapper/raw/master/GitAssets/blender_export_extras_setting.png)
 
-**YOU MUST ALSO MAKE SURE YOUR ATTRIBUTE BEGINS WITH AN UNDERSCORE:**  `_MyVertecColor`
+*You only need to do this part if you want to use the first option in this addon to grab the Attribute name from an Extras property.*
