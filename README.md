@@ -29,3 +29,5 @@ And if it finds neither of those, it will then see if there's already a secondar
 To make sure "extras" are exported for your objects in Blender, you need to make sure this Export setting is checked:
 
 ![](https://github.com/Invertex/GODOT_Vertex-Color-Import-Swapper/raw/master/GitAssets/blender_export_extras_setting.png)
+
+**YOU MUST ALSO MAKE SURE YOUR ATTRIBUTE BEGINS WITH AN UNDERSCORE:**  `_MyVertecColor`
