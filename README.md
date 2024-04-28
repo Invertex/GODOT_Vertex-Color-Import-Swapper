@@ -1,6 +1,6 @@
 # Vertex Color Import Swapper - addon for Godot 4
 
-Allows importing to automatically move vertex color data from a different file attribute into the primary vertex color attribute.
+Allows importing to automatically move data from a different mesh Attribute into the primary Vertex Color attribute.
 
 >Currently only handles GLTF files
 >
