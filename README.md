@@ -7,10 +7,14 @@ Allows importing to automatically move data from a different mesh Attribute into
 >Will automatically handle the proposed Blender GLTF export change of storing vertex color in the second channel (if that proposal goes through).**
 
 # Install:
+  Find it in the AssetLib inside your Godot Project!
+  https://godotengine.org/asset-library/asset/2905
 
-  Copy the `addons/IVX_VertexColorImportSwapper` folder into your Project's `addons` folder. **Ignore all other files**.
-
-  Asset should be found on the Godot AssetLib soon, in which case, please use it from there instead!
+  
+<sub>
+  Otherwise, Manually installing this repo:<br/>
+      Copy the <code>addons/IVX_VertexColorImportSwapper</code> folder into your Project's <code>/addons</code> folder. <b>**Ignore all other files**</b>.
+</sub><br/>
 
 
 # How It Works
