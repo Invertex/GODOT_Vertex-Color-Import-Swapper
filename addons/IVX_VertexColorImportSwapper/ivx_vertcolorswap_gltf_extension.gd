@@ -10,7 +10,10 @@ func _import_preflight(state:GLTFState, extensions:PackedStringArray):
 	var move_from_named:bool = !from_named_attr.is_empty()
 	
 	if !checkExtra and !move_from_named and !move_from_color_1:
-		return ERR_SKIP
+		return OK
+	
+	if !state.json.has("meshes"):
+		return OK
 	
 	for mesh:Dictionary in state.json.meshes as Array:
 		if !mesh.has("primitives") or mesh["primitives"].size() == 0:
