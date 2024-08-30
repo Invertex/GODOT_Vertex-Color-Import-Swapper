@@ -34,7 +34,7 @@ This allows you to use different attribute names in different objects and have t
 
 If `gltf_color_0` is not found, then it will default to looking for an Attribute with the name you define in the second option of this addon's settings. `_COLOR_0` in my example (default setting).
 
-And if it finds neither of those, it will then see if there's already a secondary Vertex color channel in the asset, and will move it to the the First Vertex Channel for use in your shaders.
+And if it finds neither of those, it will then see if there's already a secondary Vertex color channel in the asset, and will move it to the *first* Vertex Channel for use in your shaders.
 
 # Ensuring your Custom Attribute is exported
 The GLTF exporter will export any extra Attributes you have on meshes, **as long as they start with an `_` underscore**. Like  `_MyVertexColor`
